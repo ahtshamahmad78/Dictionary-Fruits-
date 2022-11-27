@@ -1,0 +1,19 @@
+    Dictionary<string, string> FruitList = new Dictionary<string, string>();
+            FruitList.Add("Mango", "Aam");
+            FruitList.Add("Apple", "saib");
+            FruitList.Add("Orange", "Malta");
+            FruitList.Add("Peach", "Aro");
+            FruitList.Add("Grapes", "Angoor");
+           
+            string word=Console.ReadLine();
+           
+         foreach (var item in word)
+            {
+                string keyword = FruitList.Keys.FirstOrDefault();
+                string keyvalue = FruitList.Values.FirstOrDefault();
+                if (word==keyword)
+                {
+                    Console.WriteLine(keyword); 
+                    Console.ReadLine();
+                }
+            }    
